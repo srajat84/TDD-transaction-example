@@ -1,0 +1,9 @@
+(txn.getDateOfTransaction().isEqual(financialYearStartDate) ||
+                    txn.getDateOfTransaction().isAfter(financialYearStartDate)) &&
+            (txn.getDateOfTransaction().isEqual(financialYearEndDate) ||
+                    txn.getDateOfTransaction().isBefore(financialYearEndDate))
+
+shareTransactions.add(new ShareTransactions("Alex", "Bob",
+                TransactionType.Transfer, "01/04/2017", 5000));
+        shareTransactions.add(new ShareTransactions("Alex", "Bob",
+                TransactionType.Transfer, "31/03/2018", 5000));
